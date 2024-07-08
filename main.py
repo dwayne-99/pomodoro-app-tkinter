@@ -1,5 +1,6 @@
 from tkinter import *
 import math
+
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
 RED = "#e7305b"
@@ -13,7 +14,6 @@ reps = 0
 timer = None
 
 # ---------------------------- TIMER RESET ------------------------------- #
-
 def reset_timer():
     window.after_cancel(timer)
     canvas.itemconfig(timer_text, text="00:00")
@@ -24,7 +24,6 @@ def reset_timer():
 
 
 # ---------------------------- TIMER MECHANISM ------------------------------- #
-
 def start_timer():
     global reps
     reps += 1
